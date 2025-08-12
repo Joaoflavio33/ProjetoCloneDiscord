@@ -1,0 +1,253 @@
+/* =========================
+   RESET E BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background: url(assets/baixados-1.png) no-repeat center/cover;
+    display: grid;
+    line-height: 1.6;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    min-height: 60rem;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.container h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    color: white; 
+}
+
+.container p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 57rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    color: white;
+}
+
+.button-1,
+.button-2 {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.button-1 {
+    color: #5865f2;
+    background: white;
+}
+
+.button-1:hover {
+    color: #4752c4;
+    box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+.button-2 {
+    background: #23272a;
+    color: white;
+    margin: 0.6rem;
+}
+
+.button-2:hover {
+    background: #2c2f33;
+    box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   SEÇÕES PRINCIPAIS
+========================= */
+.second-container,
+.container-reverse,
+.three-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.container-reverse {
+    background-color: rgba(248, 233, 214, 0.774);
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4 {
+    transform: scale(1);
+    margin: 0;
+    max-width: 100%;
+}
+
+.image-1 img,
+.image-2 img,
+.image-3 img,
+.image-4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-1,
+.text-reverse-1,
+.text-3,
+.text-reverse-2 {
+    max-width: 600px;
+}
+
+.text-1 h2,
+.text-reverse-1 h2,
+.text-3 h2,
+.text-reverse-2 h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.text-1 p,
+.text-reverse-1 p,
+.text-3 p,
+.text-reverse-2 p {
+    font-size: 1.25rem;
+    color: #4f5660;
+    line-height: 1.6;
+}
+
+.container-reverse {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5%;
+}
+
+.container-reverse-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: rgba(248, 233, 214, 0.774);
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.space {
+    display: inline-block;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.footer-content img {
+    width: 100%;
+    height: 120px;
+    display: block;
+    object-fit: cover;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .second-container,
+    .container-reverse,
+    .three-container,
+    .container-reverse-2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .text-1,
+    .text-reverse-1,
+    .text-3,
+    .text-reverse-2 {
+        margin: 0 auto;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    header {
+        min-height: auto;
+        padding: 4rem 1rem;
+    }
+
+    .container h1 {
+        font-size: 2.5rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .text-1 h2,
+    .text-reverse-1 h2,
+    .text-3 h2,
+    .text-reverse-2 h2 {
+        font-size: 2rem;
+    }
+
+    .text-1 p,
+    .text-reverse-1 p,
+    .text-3 p,
+    .text-reverse-2 p {
+        font-size: 1rem;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+
+    .button-1,
+    .button-2 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+}
