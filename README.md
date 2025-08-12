@@ -1,15 +1,5 @@
-Entendendo o Desafio
-Neste Desafio você colocará a mão na massa e irá reproduzir a página da incrível plataforma do Discord colocando em prática todos os conceitos aprendidos até aqui, principalmente sobre Responsividade no CSS.
+🎯 Desafio de Responsividade — Clone do Discord
+📖 Entendendo o Desafio
+Neste desafio, você colocará a mão na massa e irá reproduzir a página da incrível plataforma Discord, aplicando na prática todos os conceitos aprendidos até aqui — principalmente sobre responsividade no CSS.
 
-Seja criativo(a) e dê a sua identidade para o Projeto. Lembre-se que para um(a) Profissional de Tecnologia é super importante ter um portfólio sólido e completo.
-
- 
-
-Link do Figma
-Aqui deixamos o link do Protótipo no Figma apresentado pela Expert durante o Desafio para que você o tenha como referência:
-
-Desafio de Responsividade
- 
- 
-Bons estudos wink
- 
+💡 Dica: Seja criativo(a) e adicione a sua identidade visual ao projeto!
